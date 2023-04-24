@@ -1,0 +1,27 @@
+{
+  "name": "node-mongo-crud1",
+  "version": "1.0.0",
+  "description": "To develop my first crud app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CK-EmbPro/CRUD-APPLICATION.git"
+  },
+  "author": "CK-Debrice",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CK-EmbPro/CRUD-APPLICATION/issues"
+  },
+  "homepage": "https://github.com/CK-EmbPro/CRUD-APPLICATION#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "mongoose": "^7.0.4"
+  }
+}

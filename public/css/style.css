@@ -1,0 +1,12 @@
+.wrapper{
+    
+    border-color: red;
+    width: 100%;
+    height: 100vh;
+    background: black url(/images/new.jpg) center / contain no-repeat fixed;
+}
+
+.ui{
+    margin-left: 100px;
+    
+}
