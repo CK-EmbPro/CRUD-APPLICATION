@@ -1,6 +1,6 @@
 const express = require('express');
 const log=require('./Middlewares/log')
-const env = require ('./env');
+const env = require ('./config/env');
 const mongoose= require('mongoose')
 const homeroute= require('./routes/home')
 const app = express()
