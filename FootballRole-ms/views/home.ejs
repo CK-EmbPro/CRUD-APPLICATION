@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="stylesheet" href="/css/semantic.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+<body>
+    <div class="wrapper">
+    
+    <div class="ui massive menu">
+        <div class="ui container">
+        <div class="header item">
+          <a href="/users" class="link">Home</a>
+        </div>
+        <a class="item">
+          Blog
+        </a>
+        <a class="item">
+          Contact 
+        </a>
+        <a class="item">
+          About
+        </a>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+
+
+    <div class="ui container">
+        <form action="/users/add" class="ui form" method="post">
+            <div class="ui three fields">
+                <div class="field">
+                    <label for="name" class="ui header green">Enter the club  name</label>
+                    <input type="text" name="name">
+
+                    <label for="players" class="ui header green">Enter the players  name</label>
+                    <input type="text" name="players">
+
+                    <label for="coach" class="ui header green">Enter the Coach  name</label>
+                    <input type="text" name="coach">
+                </div>
+            </div>
+
+            <div class="ui fluid field">
+                <input type="submit" value="Add" class="ui button green fluid">
+            </div>
+        </form>
+
+        <br>
+        <br>
+
+        <table class="ui green table">
+            <thead>
+                <th>Club name</th>
+                <th>Players</th>
+                <th>Coach</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </thead>
+
+            <tbody> 
+               <tr> 
+                <td>Fc Barcelona</td>
+                <td>Messi, Suarezi, Neymar</td>
+                <td>Ronald Koeman</td>
+                <td><a class="ui purple button">Edit</a></td>
+                <td><a class="ui red button">Delete</a></td>
+            </tr>
+
+            <% footballs.forEach((foot)=>{ %>
+               <tr>
+                <td><%-foot.name%></td>
+                <td><%-foot.players%></td>
+                <td><%-foot.coach%></td>
+                <td><a class="ui purple button" href="/users/edit/<%=foot._id%>">Edit</a></td>
+                <td><a class="ui red button" href="/users/delete/<%=foot._id%>">Delete</a></td>
+               </tr>
+                <% })%>
+
+            </tbody>
+        </table>
+    </div>
+
+    </div>
+
+    <script src="/js/semantic.min.js"></script>
+</body>
+</html>

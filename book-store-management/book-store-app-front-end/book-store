@@ -1,0 +1,210 @@
+material ui is a react component library that implements google's material Design
+
+it has default style for easy component reusability 
+
+Base UI components and hooks are used as foundation due to the headless and skeletal like basics for other further dev
+
+consider it as the bootstrap of the react js
+
+
+dependencies to install 
+a. material ui as the react component library
+b. mui icons 
+c. react router v6
+d. extension ES7+ React/Redux/React-Native snippets v4.4.3
+ rafce
+ 
+ the error codes of 39 is depending on the npm packages and npm itself
+ 
+ the emotion is the library for styling the react component using the css 
+ 
+ @mui/material is the package providing the set of  UI components
+ 
+ CSS-in-Js library 
+ 
+ for the styled component : 
+ a. styled function used to apply the javascript with css component 
+ b. css prop 
+ c. passing of the functions as the style values , which apply conditional styling of the component or its parts 
+ d. there is unique names for the styles
+ 
+ It seems for the components are installed in the src folder
+ 
+ SSR : server-side rendering
+ 
+ Better use emotion for the SSR projects 
+ 
+10/JUN/2023
+
+For the font-weights that the fontsource supports are  300->700
+
+the google fonts apis are used to load the needed fonts subsets than loading the whole font file , 
+asynchronous loading techniques , 
+caching for the later use instead of downloading it again 
+
+
+display = swap is used to initially load the fallback fonts and then render the actual font files while they are available to prevent like the false text rendering 
+
+Even you can either use the CDN libraries for the material ui components but not fresh for the production as due to performance unfavouring cas the whole library is downloaded regardlessly which actual components to be used
+
+
+mainly use the general class and then for the text in the <i></i>
+put there the name of the icon that you want to embed
+
+the material ui components works in isolation and then to mean that they don't require the globally styles to function 	
+
+The material ui is a mobile first component library so that for proper rendering and preventing inconsistencies while rendering the web content
+
+
+CSSbaseline is better for the reset across browsers to ensure the proper rendering and prevent inconsistencies rather thatn globa-style sheets like normalise.css
+
+typography: first of all it is a component 
+
+scale: 12px to 96px 
+
+I think the variants are the changing values like h1-h6 , subtitle 1-2 , body 1-2
+
+variants : hear it as some styles that are applied to text elements 	like: font-size, line-height, font-weight, letter-spacing
+
+eg: captions , buttons, headings, subtitles, body-text and I think are like different sections of texts displayed on the web page used for applying different styles for each specific sections 
+
+Looks like the {} approach is quite different from the normal way of using it 
+
+
+{} is accessing the direct value of the module to be used and then normal way is like accessing only variable but without the value and then access it using React.variablename thanks 
+
+It seems like the variants are used to change the styles depending on which section of elements that you are dealing with 
+
+It seems like the tabs in the mui needs to be changed the state for the value to be changed 
+
+It seems like the tabs are using the parent element for storing the value of the current tab and the the handlechange for changing the value to the corresponding tab value as newValue 
+/
+It seems like the single tab element is self-closing 
+
+
+for the onchange it updates the newValue to the element associated with its value and if not set it uses indices and the if the tabspanel are used then it automatically can use the set values 
+
+newValye to the tab value clicked
+
+linkComponent is used to make the tab acting as the link so then it uses NavLink from the react-router for 
+
+
+the component ={Link} is used  to declare the tab as a link : 
+to mean that it the tab item will be as a result of the tab link activeness 
+to is used to specify where the content of the link are located 
+
+<Link href ="#">Lin</Link>
+
+Link or NavLink : are usedin place of anchor tags for the re-rendering but without reloading while the normal anchor tagswill relaod the page contents 
+
+there are components props used here like the to 
+replace 
+innerRef
+
+It seems like that for the Routes and route conents are declared inside the app.jsx  
+
+then the browserRouter declaration is done in the entry point of the react js which is index.js or main.jsx 
+
+
+This is how it works I think that may be that the components define the paths using the anchor tags using NavLink and Link and then the app uses these paths to define which resources to be served at those routes using Routes  
+
+
+And nothing other than components are these resources aref
+
+
+BrowserRouter is the routing functionality component that the browser uses to route different resources to different routes specifiedn in your application of the react js
+
+
+what makes a route to be a path is the path itself and the what passes or what is served throughout that path 
+
+the exact is used to only deal with specified url only or path
+
+React.Fragment is for additional DOM element
+
+
+
+when you have 
+a. multiple elements from a component
+to return multiple elements from a component
+b. without wrappin them in other further more HTML element 
+
+for returning the multiple elements from a component whithout adding  other DOM element then you can use <></> shorthand syntax or React.Fragment to do not interfere withe normal layout styling or normal styling 
+
+
+Fetching data from the backend : as this 
+
+to mean that the axios.get will return the promise which will be applied multiple then cb then after I shall know all 
+
+
+dependency array contains what the side effect really depends and if the no dependency array it will continue
+
+
+the effect executes for every render cycle and then if no values in the dependency array it will only render for the initial render , 
+
+if no this would create an infinite loop as the effect triggers a re-render event and the again triggered by the re-render 
+ 
+ 
+ CORS :Cross Origin Request Sharing is used to access resources from the front-end from the differnt port where the resources is hosted 
+ 
+ It opposes the same-origin policy
+ 
+ It establishes secure connection with the front-end and the backend , 
+ helps to consume APIs from the different domain or the resource from the server runnin gon the different port
+ 
+ 
+ Can be used to determine which headers like the content-type and authorisation , methods to be used within the APIs to consume some resources from the server
+ 
+ Access-Control-Allow-Origin: Allows user  to tell the server where the requests coming to the server are coming from 
+ 
+ The other power of cors is that you are able to define even the array of the methods that are allowed for making request on the server usein Access-Controll-Allow-Methods 
+ 
+ Even you can set credentials to true in the Coers configurations and the pass them in the fetch session of the resource to the server  
+ 
+ 
+Try-catch blocks are mostly used when : 
+
+a. File operations : like reading or writting as some times the permissions may not be there or other uncertain errors
+
+b. Database request : exceptions like the poor syntax , network issues , connection issues , 
+
+c. HTTP request (external APIs) 
+d. parsing and Validation 
+
+e. Every time we are using the async and await 
+
+though not understanding what's happening behind the scene of passin the component  the prop
+ is that all what I have done is just rendering the book withe some properties to follow while rendering
+ 
+ Align-items : is the css property that is applied for the individual flex-tems 
+ 
+ Align-content is used for just the lines of the individual flex-items
+ 
+ It seems like the technique that was used to retrieve the image is savign the link of the source in the db and then render it as the src value of the image src attribute 
+ 
+ for the form in the material ui we use textField and formLabel
+ 
+ the textField has some attribute like the variant for the determinig may be the border of it fullWidth , name
+ 
+ 
+ It seems like the component also imported from mui are started in the capital letters 
+ 
+ 
+ 
+ some colors : primary , secondary , info , success, error, warning
+ 
+ I have learnt how I can make the label then , placeholders, values then size if either small, or medium 
+ 
+ !system properties: now I have known that are the properties that are passed as classes either bools or variable classes for the styling 
+ 
+ To mean the ones being passed are the system properties 
+ 
+ 
+ for importing checkbox we use some controls attribute
+ 
+ It seems like the checkbox is called the controll in terms of mui and e 
+ 
+ 
+ we need like the way we will be trying to know anonymously which property to update in the state object by letting it have the name similar like the property name ,
+ 
+ 
+ for the name of the e.taget as the property name we need to enclose it in the [] brackets
